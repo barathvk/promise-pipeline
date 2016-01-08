@@ -1,0 +1,26 @@
+{
+  "name": "promise-pipeline",
+  "version": "1.0.0",
+  "description": "nodejs pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hecof/promise-pipeline.git"
+  },
+  "keywords": [
+    "pipeline",
+    "promise"
+  ],
+  "author": "Héctor Luis Collado Fernández",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hecof/promise-pipeline/issues"
+  },
+  "homepage": "https://github.com/hecof/promise-pipeline#readme",
+  "dependencies": {
+    "bluebird": "^3.1.1"
+  }
+}
