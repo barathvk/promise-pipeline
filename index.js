@@ -23,11 +23,11 @@ class Pipeline {
             var index = 0
 
             var next = function(err){
-                if (index == this.handlers.length)
-                    resolve(output)
-                else if (err) {
+                if (err) {
                     reject(err)
                 }
+                else if (index == this.handlers.length)
+                    resolve(output)                
                 else {
                     let h = this.handlers[index++]
                     h(input, output, next)
