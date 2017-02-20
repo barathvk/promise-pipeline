@@ -22,9 +22,12 @@ class Pipeline {
         return new Promise((resolve, reject) => {
             var index = 0
 
-            var next = function(){
+            var next = function(err){
                 if (index == this.handlers.length)
                     resolve(output)
+                else if (err) {
+                    reject(err)
+                }
                 else {
                     let h = this.handlers[index++]
                     h(input, output, next)
